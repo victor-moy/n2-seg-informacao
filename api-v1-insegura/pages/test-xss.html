@@ -9,7 +9,7 @@
         .then((res) => res.json())
         .then((users) => {
           users.forEach((user) => {
-            console.log(user); // <- isso aqui
+            console.log(user);
             const li = document.createElement("li");
             li.innerHTML = user.username;
             document.getElementById("user-list").appendChild(li);
