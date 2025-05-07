@@ -1,6 +1,6 @@
 # Projeto N2 – Segurança da Informação
 
-Este repositório contém duas versões de uma API RESTful para cadastro e gerenciamento de usuários, desenvolvidas para o trabalho N2 da disciplina de Administração de Sistemas Operacionais II. O objetivo é demonstrar a evolução de uma aplicação insegura para uma aplicação segura, abordando vulnerabilidades comuns em aplicações web e boas práticas de segurança.
+Este repositório contém duas versões de uma API RESTful para cadastro e gerenciamento de usuários, desenvolvidas para o trabalho N2 da disciplina de Segurança da Informação. O objetivo é demonstrar a evolução de uma aplicação insegura para uma aplicação segura, abordando vulnerabilidades comuns em aplicações web e boas práticas de segurança.
 
 ---
 
