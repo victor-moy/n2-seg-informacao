@@ -21,7 +21,7 @@ Este repositório contém duas versões de uma API RESTful para cadastro e geren
 N2-SEG-INFORMACAO/
 ├── api-v1-insegura/     # Versão vulnerável (sem segurança)
 ├── api-v2-segura/       # Versão protegida com JWT, bcrypt, etc.
-├── relatorios/          # Relatórios técnico e executivo (opcional)
+├── relatorios/          # Relatórios técnico e executivo
 └── README.md
 ```
 
