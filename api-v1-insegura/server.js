@@ -32,6 +32,14 @@ app.post("/users", async (req, res) => {
   res.status(201).json({ message: "Usuário criado" });
 });
 
+/*
+// ataque v1
+app.post("/users", async (req, res) => {
+  const resultado = await User.find({ username: req.body.username });
+  res.status(200).json(resultado);
+});
+*/
+
 // PUT - Atualizar
 app.put("/users/:id", async (req, res) => {
   await User.findByIdAndUpdate(req.params.id, req.body);
